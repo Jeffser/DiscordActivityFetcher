@@ -8,6 +8,7 @@ author = False
 serverID = 0
 userID = 0
 botToken = ''
+fileDirectory = ''
 ###################
 
 @tasks.loop(minutes=0.1)
@@ -17,7 +18,7 @@ async def record():
     currentActivities = []
     for cA in author.activities: currentActivities.append({'details': cA.details, 'large_image_url': cA.large_image_url, 'name': cA.name, 'state': cA.state})
     currentActivities = json.dumps(currentActivities).replace('"', '\\"')
-    system(f'echo "{currentActivities}" > /srv/http/discord.json')
+    system(f'echo "{currentActivities}" > ' + fileDirectory)
     #with open("/srv/http/discord.json", "w") as outfile: outfile.write()
 
 @bot.event
