@@ -7,4 +7,4 @@ You need to fill the details in the code (serverID, userID, botToken). You can g
 
 Also specify a file for the JSON, for example '/srv/http/discord.json' if you want it to be exposed to Apache directly.
 
-To see a live example visit [my webpage](https://jeffser.github.io), if I have any current activities you'll be able to see them in the mainpage.
+To see a live example visit [my webpage](https://jeffser.github.io), if I have any current activities you'll be able to see them in the mainpage under '¿Qué estoy haciendo?' (What am I up to?).
